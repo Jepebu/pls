@@ -15,6 +15,7 @@ Combining the utility of `sshpass` and `ansible-vault`; `pls` lets you define th
 To build `pls` from source you'll need standard C build tools, libsodium development files, and [json.hpp](https://github.com/nlohmann/json).  
 
 ## Build
+This block of code will clone the repository, download the json.hpp header, build the application, and print the help message.  
 ```
 git clone https://github.com/Jepebu/pls.git
 cd pls
@@ -23,7 +24,10 @@ g++ -o pls pls.cpp -lutil -lsodium
 # Alternatively for static compilation:
 # g++ -O2 -static -o pls pls.cpp -lutil -lsodium
 ./pls -h
+```
 
+`pls` help/usage message:  
+```
 Usage:
   Edit Vault:    ./pls -e -v <vault_file>
   Execute SSH:   ./pls -v <vault_file> [-s <script_file>] [-l <target_list>] -- <ssh arguments...>
