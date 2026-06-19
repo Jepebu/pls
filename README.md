@@ -11,7 +11,7 @@ Combining the utility of `sshpass` and `ansible-vault`; `pls` lets you define th
 * Made for static compilation - build once and copy (mostly) anywhere.
 
 ## Prerequisites
-To build `pls` from source you'll need standard C build tools, libsodium development files, and [json.hpp](https://github.com/nlohmann/json/releases/download/v3.11.2/json.hpp).  
+To build `pls` from source you'll need standard C build tools, libsodium development files, and [json.hpp](https://github.com/nlohmann/json).  
 
 ## Build
 ```
